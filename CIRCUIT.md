@@ -1,20 +1,16 @@
-# Home Lab — Setup Diagram
+# Set Up An Electronics Home Lab Tools And Equipment — Circuit Notes
 
-- Course: Set Up an Electronics Home Lab Tools and Equipment
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/set-up-an-electronics-lab-tools-equipment-laboratory-electronic-solder/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- AC outlet to bench PSU; PSU to breadboard rails; tools organized with ESD mat.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
-AC -> PSU -> +/− Rails -> Components
-ESD Mat & Tools nearby
-```
-
-## Purchase With Discount
-
-Get a discounted price and set up a safe, efficient lab — use the course link above.
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
